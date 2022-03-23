@@ -1,12 +1,10 @@
-import Home from "./pages/home";
+// import Home component from Pages
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
+  // render Home component into the App component
+  return <Home />;
 }
 
 export default App;
