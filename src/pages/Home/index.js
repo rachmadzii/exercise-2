@@ -1,7 +1,7 @@
 // import Components Searchbar
-import Searchbar from "../../../src/components/Searchbar";
+import Searchbar from "../../components/Searchbar";
 // import Components Gif
-import Gif from "../../../src/components/Gif";
+import Gif from "../../components/Gif";
 // import object data
 import data from "../../data";
 
