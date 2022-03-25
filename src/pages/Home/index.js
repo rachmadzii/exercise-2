@@ -2,19 +2,25 @@
 import Searchbar from "../../components/Searchbar";
 // import Components Gif
 import Gif from "../../components/Gif";
-// import object data
+// import array object data
 import data from "../../data";
 
 function Home() {
-  /*  there's 2 element before, split into 2 components named Searchbar and Gif
-   *  and then render them into the Home page
-   *  Gift component have 2 props: title and url
-   */
+  // <> </> short syntax React Fragment for wrap multiple elements
+  // object GifList contains array Component Gif
+  const GifList = data.map((item) => (
+    <>
+      {item.rating === "g" && (
+        <Gif key={item.id} title={item.title} url={item.url} />
+      )}
+    </>
+  ));
+
   return (
-    <div className="home">
+    <div className="container">
       <h1>Exercise Module 2 Session 1</h1>
       <Searchbar />
-      <Gif title={data.title} url={data.url} />
+      <div className="gif-list">{GifList}</div>
     </div>
   );
 }
