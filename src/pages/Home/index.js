@@ -6,15 +6,13 @@ import Gif from "../../components/Gif";
 import data from "../../data";
 
 function Home() {
-  // <> </> short syntax React Fragment for wrap multiple elements
-  // object GifList contains array Component Gif
-  const GifList = data.map((item) => (
-    <>
-      {item.rating === "g" && (
-        <Gif key={item.id} title={item.title} url={item.url} />
-      )}
-    </>
-  ));
+  /* object GifList contains array Component Gif
+   * use map() to loop array data
+   * use filter() to filter out rating g in data
+   */
+  const GifList = data
+    .filter((item) => item.rating !== "g")
+    .map((item) => <Gif key={item.id} title={item.title} url={item.url} />);
 
   return (
     <div className="container">
