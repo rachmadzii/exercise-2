@@ -2,6 +2,13 @@
  * use {} to declare props
  * just => for return 1 line of code
  */
-const Gif = ({ title, url }) => <img src={url} alt={title} />;
+const Gif = ({ title, url }) => {
+    return (
+        <>
+            <p>{title}</p>
+            <img src={url} alt={title} />
+        </>
+    )
+}
 
-export default Gif;
+export default Gif

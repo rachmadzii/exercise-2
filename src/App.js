@@ -1,10 +1,9 @@
-// import Home component from Pages
-import Home from "./pages/Home";
 import "./App.css";
+import SearchGif from "./pages/SearchGif";
 
 function App() {
-  // render Home component into the App component
-  return <Home />;
+  // render SearchGif component into the App component
+  return <SearchGif />;
 }
 
 export default App;
