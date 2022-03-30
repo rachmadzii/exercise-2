@@ -2,28 +2,27 @@
 
 body {
   background-color: #fdf6ec;
-  padding: 20px 30px;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  padding: 30px;
 }
 
 .container h1 {
-  margin: 10px 0 0 8px;
+  margin: 5px 0;
 }
 
-.formSearch .form-group {
+#form-search .form-group {
   display: flex;
   flex-direction: row;
-  gap: 16px;
-  margin-left: 8px;
+  gap: 12px;
 }
 
-.formSearch input {
+#form-search input {
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 8px 16px;
@@ -31,7 +30,7 @@ body {
   font-size: 14px;
 }
 
-#btnSearch {
+.btn-primary {
   padding: 8px 16px;
   border: 0;
   border-radius: 5px;

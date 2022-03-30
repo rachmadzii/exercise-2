@@ -1,13 +1,13 @@
 // function Components named Searchbar, has no props
 const Search = () => {
   return (
-    <form className="formSearch">
+    <form id="form-search">
       <div className="form-group">
         <input type="text" name="query" placeholder="Search gif..." required />
-        <input type="submit" id="btnSearch" value="Search" />
+        <input type="submit" className="btn-primary" value="Search" />
       </div>
     </form>
   );
 };
 
-export default Search
+export default Search;
