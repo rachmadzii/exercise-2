@@ -1,9 +1,9 @@
 import "./App.css";
-import SearchGif from "./pages/SearchGif";
+import Home from "./pages/Home";
 
 function App() {
   // render SearchGif component into the App component
-  return <SearchGif />;
+  return <Home />;
 }
 
 export default App;
