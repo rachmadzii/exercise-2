@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fdf6ec;
+    background-color: #FDEFF4;
 }
 
 hr {
@@ -38,7 +38,6 @@ hr {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 24px;
 }
 
@@ -78,7 +77,7 @@ hr {
 }
 
 .btn-text {
-    color: #5b7db1;
+    color: #FFAD60;
     border: none;
     background-color: transparent;
     padding: 0;
