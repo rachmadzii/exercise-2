@@ -1,9 +1,23 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import SearchGif from "./pages/SearchGif";
+import Trending from "./pages/Trending";
 
 function App() {
-  // render SearchGif component into the App component
-  return <Home />;
+    return (
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/trending">
+                    <Trending />
+                </Route>
+                <Route path="/search">
+                    <SearchGif />
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;

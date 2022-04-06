@@ -12,15 +12,16 @@ export default function SearchGif() {
 
     return (
         <div className="container">
-            <h1>Exercise Module 2 Session 1</h1>
             <SearchBar onSuccess={onSuccess} />
-            {images.map((image) => (
-                <Gif
-                    url={image.images.fixed_width.url}
-                    title={image.title}
-                    key={image.id}
-                />
-            ))}
+            <div className="gif-wrapper">
+                {images.map((image) => (
+                    <Gif
+                        url={image.images.fixed_width.url}
+                        title={image.title}
+                        key={image.id}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
