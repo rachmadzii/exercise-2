@@ -13,9 +13,17 @@
   },
   "plugins": ["react"],
   "rules": {
+    "require-jsdoc": 0,
+    "global-require": 0,
+    "linebreak-style": 0,
     "no-undef": "warn",
     "no-unused-vars": "warn",
-    "require-jsdoc": 0,
+    "react/prop-types": "off",
+    "quotes": ["error", "double"],
+    "space-in-parens": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "space-before-function-paren": ["error", "never"],
+    "eslint linebreak-style": [0, "error", "windows"],
     "comma-spacing": [
       "error",
       {
@@ -35,14 +43,6 @@
       {
         "max": 1
       }
-    ],
-    "object-curly-spacing": ["error", "always"],
-    "space-in-parens": ["error", "never"],
-    "quotes": ["error", "double"],
-    "space-before-function-paren": ["error", "never"],
-    "linebreak-style": 0,
-    "global-require": 0,
-    "eslint linebreak-style": [0, "error", "windows"],
-    "react/prop-types": "off"
+    ]
   }
 }

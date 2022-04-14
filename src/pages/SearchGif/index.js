@@ -1,27 +1,27 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+import React from "react";
 import { useState } from "react";
 import Gif from "../../components/Gif";
 import SearchBar from "../../components/SearchBar";
 
 export default function SearchGif() {
-    const [images, setImages] = useState([]);
+  const [images, setImages] = useState([]);
 
-    const onSuccess = (images) => {
-        setImages(images);
-    };
+  const onSuccess = (images) => {
+    setImages(images);
+  };
 
-    return (
-        <div className="container">
-            <SearchBar onSuccess={onSuccess} />
-            <div className="gif-wrapper">
-                {images.map((image) => (
-                    <Gif
-                        url={image.images.fixed_width.url}
-                        title={image.title}
-                        key={image.id}
-                    />
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div className="container">
+      <SearchBar onSuccess={onSuccess} />
+      <div className="gif-wrapper">
+        {images.map((image) => (
+          <Gif
+            url={image.images.fixed_width.url}
+            title={image.title}
+            key={image.id}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }

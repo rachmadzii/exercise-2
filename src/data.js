@@ -1,5 +1,3 @@
-// object data from github link
-
 const data = [
   {
     id: "4HrBfVJJveBNS9ytSk",
