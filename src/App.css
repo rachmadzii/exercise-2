@@ -89,6 +89,7 @@ hr {
 .gif-wrapper {
     display: grid;
     justify-items: center;
+    align-items: flex-start;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
     margin: 20px 0;

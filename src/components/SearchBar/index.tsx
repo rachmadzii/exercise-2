@@ -45,6 +45,7 @@ export default function SearchBar({ onSuccess }: SearchBarProps) {
             type="text"
             value={query}
             placeholder="Search gif..."
+            aria-label="searchBox"
             required
           />
           <Button type="submit" colorScheme='teal' variant='solid'>
